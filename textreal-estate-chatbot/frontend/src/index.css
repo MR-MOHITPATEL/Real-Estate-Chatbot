@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 249 95% 63%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 27.9% 16.9%;
+  --secondary-foreground: 210 40% 96%;
+  --muted: 215 27.9% 16.9%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 210 27.9% 24%;
+  --accent-foreground: 210 40% 98%;
+  --border: 215 27.9% 16.9%;
+  --input: 215 27.9% 16.9%;
+  --ring: 249 95% 63%;
+  --radius: 0.85rem;
+}
+
+.light {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 249 72% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 228 33% 96%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 228 33% 96%;
+  --muted-foreground: 222.2 47.4% 11.2%;
+  --accent: 228 33% 92%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 249 72% 58%;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro",
+    "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-2xl border border-white/10 shadow-2xl;
+}
+
+.chat-background {
+  background: radial-gradient(
+      circle at top,
+      rgba(99, 102, 241, 0.3),
+      transparent 45%
+    ),
+    linear-gradient(145deg, rgba(2, 6, 23, 0.95), rgba(15, 23, 42, 0.85));
+}
