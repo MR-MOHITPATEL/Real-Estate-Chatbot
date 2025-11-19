@@ -100,8 +100,6 @@ Questions or Next Steps
 
 Executive-grade conversational analytics assistant built for the **SigmaValue Full Stack Developer Assignment (2025)**. It combines a Django REST API, a Vite/React/TypeScript frontend, and a curated Pune micro-market dataset to answer natural-language real estate queries with narrative summaries, interactive charts, and exportable tables.
 
-![UI Screenshot Placeholder](https://placehold.co/1200x700/020617/FFFFFF?text=Mini+Real+Estate+Chatbot)
-
 ---
 
 ## ✨ Feature Highlights
@@ -231,22 +229,6 @@ Features delivered:
 
 ---
 
-## ☁️ Deployment Notes
-
-**Render (Backend)**
-1. Push this repo to GitHub and create a Render *Web Service*.
-2. Runtime: Python 3.11. Build command `pip install -r backend/requirements.txt`.
-3. Start command `cd backend && gunicorn realestate.wsgi:application`.
-4. Add the same environment variables from `.env` (plus `PYTHONPATH=backend` if needed).
-5. Add persistent storage or re-upload `data/real_estate_data.xlsx` via Render dashboard.
-
-**Vercel (Frontend)**
-1. Import the repo, select the `frontend` directory as the root.
-2. Build command `npm run build`, output directory `dist`.
-3. Set `VITE_API_BASE_URL` to the Render backend URL (`https://your-api.onrender.com`).
-4. Redeploy whenever backend URL or env changes.
-
----
 
 ## 🧪 Quality & Tooling
 
@@ -256,19 +238,6 @@ Features delivered:
 
 ---
 
-## 📸 Screens & Demo
 
-- Placeholder screenshot hosted via [placehold.co](https://placehold.co/1200x700/020617/FFFFFF?text=Mini+Real+Estate+Chatbot) – swap with a real capture when ready.
-- Live demo placeholder: https://real-estate-chatbot-demo.example.com
-
----
-
-## 🤝 Contributing / Next Steps
-
-- Add persistent QueryLog model usage + admin dashboard filters.
-- Expand query parser (synonyms, multi-city combos) and add caching for chart datasets.
-- Harden tests (factory-based) and integrate GitHub Actions for CI/CD.
-
-> Built with ❤️ for SigmaValue. Reach out if you need the deployment zipped or containerized.
 
 
